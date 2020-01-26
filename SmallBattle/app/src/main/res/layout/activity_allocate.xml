@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Allocate"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nameHero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:hint="@string/nameHint"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/minusStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickMinusStrength"
+            android:background="@drawable/my_button_cyan"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/currentStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="20sp"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/addStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickAddStrength"
+            android:background="@drawable/my_button_red"
+            android:text="@string/add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/minusMagic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickMinusMagic"
+            android:background="@drawable/my_button_cyan"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/currentMagic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="20sp"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/addMagic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:onClick="onClickAddMagic"
+            android:background="@drawable/my_button_red"
+            android:text="@string/add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/minusStamina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickMinusStamina"
+            android:background="@drawable/my_button_cyan"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/currentStamina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="20sp"
+            android:layout_margin="15dp" />
+
+        <Button
+            android:id="@+id/addStamina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onClickAddStamina"
+            android:background="@drawable/my_button_red"
+            android:text="@string/add" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentSkillPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/toBattle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/sword"
+        android:text="To Battle!"
+        android:onClick="onClickToBattle"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/heart"/>
+
+        <ImageView
+            android:id="@+id/manaDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:src="@drawable/mana"/>
+
+        <ImageView
+            android:id="@+id/swordAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/swordattack"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/currentHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/currentMana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/currentAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

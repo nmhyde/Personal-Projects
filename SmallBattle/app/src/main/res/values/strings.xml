@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Homework2</string>
+    <string name="minus">-</string>
+    <string name="add">+</string>
+    <string name="nameHint">Name your hero: </string>
+    <string name="welcome">Allocate skill points to battle!</string>
+    <string name="toBattle">Onward!</string>
+    <string name="attack">Player Attack</string>
+    <string name="attackEnemy">Attack Enemy</string>
+    <string name="runAway">Run Away</string>
+    <string name="castSpell">Cast Spell</string>
+    <string name="noRunning">There is no running!</string>
+
+    <string name="HEALTH">Current Health: </string>
+    <string name="MANA">Current Mana: </string>
+    <string name="ATTACK">Current Attack: </string>
+
+    <string name="STAMINA">Stamina: </string>
+    <string name="STRENGTH">Strength: </string>
+    <string name="MAGIC">Magic: </string>
+    <string name="SKILLPOINTS">SkillPoints: </string>
+
+    <string name="enemyHealth">Health: </string>
+    <string name="enemyName"></string>
+    <string name="title_activity_results">Results</string>
+
+</resources>
