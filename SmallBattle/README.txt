@@ -3,7 +3,7 @@ README
 BELLS AND WHISTLES:
 The bells and whistles I added were some beautification.
 I had some animation for buttons, I tinted an the monster image green when poisoned
-and untinted when the poison DOT ended, and I made custom buttons. 
+and untinted when the poison damage over time(DOT) effect ended, and I made custom buttons. 
 I also included the fact that you can name your character, but I didn't get to actually
 put that name anywhere. The poison DOT is also something I designed that I thought was a 
 cool feature. Instead of using serializable, I used parcelable, which is supposedly
@@ -21,5 +21,6 @@ The victory or loss screen has to wait for the CountDownTimer to end before laun
 when a character dies, I think. 
 
 MISC:
-I used some deprecated code. I tried to future proof and I actually didn't find the
-code I was using that was deprecated because I didn't look. Thank you for reading!
+I used some deprecated code :(
+This is definitely not a finished project and I'd like to keep
+working on this for fun when I have time.
